@@ -7,7 +7,7 @@
  */
 
 Cell: class <T> {
-	val: __onheap__ T
+	val: T
 
 	init: func (=val)
 	init: func ~noval
