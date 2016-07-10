@@ -189,6 +189,6 @@ FloatTransform2D: cover {
 	}
 }
 
-extend Cell<FloatTransform2D> {
+extend Cell<T> {
 	toString: func ~floattransform2d -> String { (this val as FloatTransform2D) toString() }
 }

@@ -88,6 +88,6 @@ operator / (left: Float, right: FloatVector2D) -> FloatVector2D { FloatVector2D 
 operator * (left: Int, right: FloatVector2D) -> FloatVector2D { FloatVector2D new(left * right x, left * right y) }
 operator / (left: Int, right: FloatVector2D) -> FloatVector2D { FloatVector2D new(left / right x, left / right y) }
 
-extend Cell<FloatVector2D> {
+extend Cell<T> {
 	toString: func ~floatvector2d -> String { (this val as FloatVector2D) toString() }
 }

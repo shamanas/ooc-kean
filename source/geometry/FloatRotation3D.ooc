@@ -41,6 +41,6 @@ FloatRotation3D: cover {
 	}
 }
 
-extend Cell<FloatRotation3D> {
+extend Cell<T> {
 	toString: func ~floatrotation3d -> String { (this val as FloatRotation3D) toString() }
 }

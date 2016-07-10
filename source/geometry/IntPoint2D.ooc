@@ -58,6 +58,6 @@ operator / (left: Int, right: IntPoint2D) -> IntPoint2D { IntPoint2D new(left / 
 operator * (left: Float, right: IntPoint2D) -> IntPoint2D { IntPoint2D new(left * right x, left * right y) }
 operator / (left: Float, right: IntPoint2D) -> IntPoint2D { IntPoint2D new(left / right x, left / right y) }
 
-extend Cell<IntPoint2D> {
+extend Cell<T> {
 	toString: func ~intpoint2d -> String { (this val as IntPoint2D) toString() }
 }

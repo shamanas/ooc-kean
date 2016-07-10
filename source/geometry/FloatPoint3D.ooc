@@ -88,6 +88,6 @@ operator / (left: Float, right: FloatPoint3D) -> FloatPoint3D { FloatPoint3D new
 operator * (left: Int, right: FloatPoint3D) -> FloatPoint3D { FloatPoint3D new(left * right x, left * right y, left * right z) }
 operator / (left: Int, right: FloatPoint3D) -> FloatPoint3D { FloatPoint3D new(left / right x, left / right y, left / right z) }
 
-extend Cell<FloatPoint3D> {
+extend Cell<T> {
 	toString: func ~floatpoint3d -> String { (this val as FloatPoint3D) toString() }
 }

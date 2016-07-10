@@ -54,6 +54,6 @@ IntShell2D: cover {
 	}
 }
 
-extend Cell<IntShell2D> {
+extend Cell<T> {
 	toString: func ~intshell2d -> String { (this val as IntShell2D) toString() }
 }
