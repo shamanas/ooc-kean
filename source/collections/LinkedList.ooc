@@ -161,7 +161,7 @@ operator []= <T>(list: LinkedList<T>, index: Int, value: T) { list set(index, va
 Node: class <T> {
 	prev: This<T>
 	next: This<T>
-	data: __onheap__ T
+	data: T
 	init: func
 	init: func ~withParams (=prev, =next, =data)
 	free: override func {

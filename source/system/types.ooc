@@ -14,7 +14,6 @@ Object: abstract class {
 	class: Class
 
 	free: virtual func {
-		this __destroy__()
 		memfree(this)
 	}
 

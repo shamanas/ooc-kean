@@ -88,7 +88,7 @@ _ActionTask: class extends _Task {
 }
 
 _ResultTask: class <T> extends _Task {
-	_result: __onheap__ T
+	_result: T
 	_action: Func -> T
 	init: func (=_action, mutex: Mutex) { super(mutex) }
 	_free: override func {

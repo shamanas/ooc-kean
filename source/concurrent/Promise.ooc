@@ -118,7 +118,7 @@ Future: abstract class <T> extends _Synchronizer {
 }
 
 _ThreadFuture: class <T> extends Future<T> {
-	_result: __onheap__ T
+	_result: T
 	_action: Func
 	_thread: Thread
 	_threadAlive := true

@@ -9,8 +9,8 @@
  import io/[File, FileWriter, FileReader]
 
 _HashEntry: class <K, V> {
-	_key: __onheap__ K
-	_value: __onheap__ V
+	_key: K
+	_value: V
 	_next: This<K, V> = null
 
 	init: func (=_key, =_value)
